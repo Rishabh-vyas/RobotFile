@@ -64,7 +64,7 @@ def execute_voice_command(text):
         time = datetime.datetime.now().strftime('%I:%M %p')
         talk('Current time is ' + time)
 
-    if 'define' in text or 'who'  in text:
+    if 'define' in text in text:
         info = text.replace('define', '')
         data = wikipedia.summary(info, 2)
         talk(data)
@@ -101,7 +101,7 @@ def execute_voice_command(text):
         talk('there is lots of events in our college like isohack , technical webinar , aarambh , joy of giving Etcetera')
 
     if 'team members' in text or 'team person' in text:
-        talk('Rishabh vyas , Rahul Upadhyay , Pratham Bhawsar ,Rishi soni and Rishah soni')
+        talk('Rishabh vyas ,Rishabh soni, Rahul Upadhyay , Pratham Bhawsar ,Rishi soni')
 
     if 'slow motion song' in text or 'motion song' in text:
         talk('Aaja    ,   doob    ,   jaaun    ,    teri    ,    aankhon    ,    ke    ,    ocean    ,    mein    ,    Slow    ,    motion    ,    mein    ,    Aaja    ,    doob    ,    jaaun    ,    teri    ,    aankhon    ,    ke    ,    ocean    ,   mein    ,    Slow    ,    motion    ,    mein')
